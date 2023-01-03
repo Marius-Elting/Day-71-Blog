@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import { Linkm, useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 function DetailPage({ posts }) {
     const params = useParams();
     const navigate = useNavigate();
@@ -17,7 +17,7 @@ function DetailPage({ posts }) {
             <h1>{posts[params.blogId].title}</h1>
             <p>{posts[params.blogId].message}</p>
             <p>{posts[params.blogId].author}</p>
-            <button onClick={() => navigate(-1)}><p>Back to Home</p></button>
+            <button onClick={() => navigate(-1)}>Back to Home</button>
         </div>
     );
 }

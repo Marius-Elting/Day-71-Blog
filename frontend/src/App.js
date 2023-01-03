@@ -34,9 +34,6 @@ function App() {
   };
 
   const isUserAuth = (username, password) => {
-    console.log("data is false");
-    console.log(username);
-    console.log(password);
     if (username === userdata.username && password === userdata.password) {
       console.log("data is correct");
       setUser(true);
@@ -53,7 +50,7 @@ function App() {
         <Routes>
           <Route path='/' element={<UserPage posts={posts} deletePost={deletePost} />}></Route>
           <Route path='/admin' element={<AdminPage posts={posts} deletePost={deletePost} setPosts={setPosts} isUserAuth={isUserAuth} user={user} />}></Route>
-          <Route path='/blog/:blogId' element={<DetailPage posts={posts} deletePost={deletePost} />}></Route>
+          <Route path='/blog/:blogId' element={<DetailPage posts={posts} />}></Route>
         </Routes>
       </BrowserRouter>
     </div>

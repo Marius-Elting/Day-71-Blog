@@ -1,13 +1,13 @@
 [
   {
     "title": "Das ist eine Orange",
-    "message": "Orangen sind Lecker",
+    "message": "Orange",
     "author": "Marius Elting",
     "picture": "public/6f0a6fae6e03a26a4d718c14d954c129"
   },
   {
     "title": "Das ist ein Fisch",
-    "message": "Fisch ist Lecker",
+    "message": "Fische sind toll",
     "author": "Marius Elting",
     "picture": "public/06e27f975f94747afcd19b4ea1bb33fe"
   }
