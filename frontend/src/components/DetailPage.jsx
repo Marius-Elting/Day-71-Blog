@@ -1,7 +1,10 @@
 import { useParams } from "react-router-dom";
-import { Link } from "react-router-dom";
+import { Linkm, useNavigate } from "react-router-dom";
 function DetailPage({ posts }) {
     const params = useParams();
+    const navigate = useNavigate();
+
+
     console.log(posts);
     console.log(params.blogId);
     if (posts === undefined) {
@@ -14,7 +17,7 @@ function DetailPage({ posts }) {
             <h1>{posts[params.blogId].title}</h1>
             <p>{posts[params.blogId].message}</p>
             <p>{posts[params.blogId].author}</p>
-            <Link to="/"><p>Back to Home</p></Link>
+            <button onClick={() => navigate(-1)}><p>Back to Home</p></button>
         </div>
     );
 }

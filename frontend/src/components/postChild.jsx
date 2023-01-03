@@ -7,12 +7,12 @@ function PostChild({ posts, a, page, deletePost, setPosts }) {
     console.log(a);
     console.log(posts);
     return (
-        <div>
-            <Link to={`/blog/${a}`}>
+        <div className="sinlgePost">
+            <Link className="singlePostLink" to={`/blog/${a}`}>
                 <img src={`http://localhost:9898/${posts.picture}`} alt={posts.title}></img>
                 <h1>{posts.title}</h1>
-                <p>{posts.message}</p>
-                <p>{posts.author}</p>
+                <p>Message: {posts.message}</p>
+                <p>Autor: {posts.author}</p>
             </Link>
             {page === "admin" ? <button onClick={() => deletePost(a)}>Delete Post</button> : ""}
             {page === "admin" ? <button onClick={() => { setEdit(a); }}>Edit Post</button> : ""}

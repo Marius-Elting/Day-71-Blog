@@ -2,37 +2,116 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+p,
+h1,
+h2,
+h3 {
+  color: white;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
+.navbar {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  justify-content: center;
   background-color: #282c34;
-  min-height: 100vh;
+  padding: 20px;
+  box-shadow: 5px 2px 10px black;
+}
+
+body {
+  background-color: #383838;
+}
+
+.navbar a {
+  font-size: 25px;
+}
+
+.navbar a:hover {
+  cursor: pointer;
+  text-shadow: 2px 2px 5px black;
+  ;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.Login {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 20px;
+  gap: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+input:not([type="file"]),
+textarea {
+  padding: 10px;
+  width: 200px;
+  box-shadow: 1px 1px 3px black;
+  border-radius: 10px;
+  border: none;
+  font-size: 20px;
+  color: #282c34;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button {
+  font-size: 20px;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  width: 200px;
+  box-shadow: 1px 1px 3px black;
+  color: #282c34;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: white;
+}
+
+.addPost {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.addPost input,
+.addPost textarea,
+.addPost button {
+  width: 200px;
+  padding: 10px;
+}
+
+.sinlgePost {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  margin: 30px;
+}
+
+.singlePostLink:hover {
+  cursor: pointer;
+
+}
+
+.sinlgePost img {
+  width: 80%;
+}
+
+
+.ParentContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  ;
 }

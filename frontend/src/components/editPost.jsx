@@ -43,14 +43,14 @@ function EditPost({ setPosts, posts, postIndex, setEdit }) {
     return (
 
         <section>
-            <h2>bearbeite Post</h2>
-            <input ref={title} type={"text"} name="title" placeholder="Title"></input>
-            <textarea ref={message} name="message" placeholder="dein Text hier"></textarea>
-            <input ref={author} type={"text"} name="author" placeholder="Your Name"></input>
+            <h2>Bearbeite den Post</h2>
+            <input ref={title} type={"text"} name="title" placeholder="Titel"></input>
+            <textarea ref={message} name="message" placeholder="Dein Text hier"></textarea>
+            <input ref={author} type={"text"} name="author" placeholder="Dein Name"></input>
             <div>
                 {/* <input ref={file} type="file" name="picture"></input> */}
             </div>
-            <button onClick={sendData}>Publih</button>
+            <button onClick={sendData}>Public</button>
         </section>
 
 

@@ -23,15 +23,13 @@ function AddPost({ setPosts }) {
     };
     return (
 
-        <section>
+        <section className="addPost">
             <h2>Poste etwas</h2>
-            <input ref={title} type={"text"} name="title" placeholder="Title"></input>
-            <textarea ref={message} name="message" placeholder="dein Text hier"></textarea>
-            <input ref={author} type={"text"} name="author" placeholder="Your Name"></input>
-            <div>
-                <input ref={file} type="file" name="picture"></input>
-            </div>
-            <button onClick={sendData}>Publih</button>
+            <input ref={title} type={"text"} name="title" placeholder="Titel"></input>
+            <textarea ref={message} name="message" placeholder="Dein Text hier"></textarea>
+            <input ref={author} type={"text"} name="author" placeholder="Dein Name"></input>
+            <input ref={file} type="file" name="picture"></input>
+            <button onClick={sendData}>Public</button>
         </section>
 
 
