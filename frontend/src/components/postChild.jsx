@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import EditPost from "./editPost";
 function PostChild({ posts, a, page, deletePost, setPosts }) {
-    // console.log(posts);
     const [edit, setEdit] = useState();
     console.log(a);
     console.log(posts);

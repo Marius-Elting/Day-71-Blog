@@ -1,9 +1,8 @@
-import { useEffect, useState, useRef } from "react";
+import { useRef } from "react";
 import AddPost from "./addPost";
 import PostParent from "./postParent";
 
 function AdminPage({ deletePost, posts, setPosts, user, isUserAuth }) {
-    console.log("admin mounted");
     const userName = useRef();
     const password = useRef();
     return (

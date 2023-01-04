@@ -7,7 +7,7 @@ function EditPost({ setPosts, posts, postIndex, setEdit }) {
     const title = useRef("");
     const author = useRef("");
 
-    const sendData = (i) => {
+    const sendData = () => {
 
         console.log(posts);
         fetch("http://localhost:9898/blogPosts")
